@@ -1,0 +1,35 @@
+{
+  "name": "vp-bundle",
+  "version": "0.0.1",
+  "description": "react 组件按需加载",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "babel main.js -o index.js",
+    "prebuild": "rm -rf index.js"
+  },
+  "dependencies": {
+    "bundle-loader": "0.5.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "files": [
+    "main.js",
+    "index.js"
+  ],
+  "babel": {
+    "presets": [
+      "react",
+      "es2015",
+      "stage-0"
+    ]
+	}
+}
