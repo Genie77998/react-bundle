@@ -73,12 +73,12 @@ var Bundle = exports.Bundle = function (_React$Component) {
 }(_react2.default.Component);
 
 var loadComponent = exports.loadComponent = function loadComponent(component) {
-  return function () {
+  return function (props) {
     return _react2.default.createElement(
       Bundle,
       { load: component },
       function (Component) {
-        return _react2.default.createElement(Component, null);
+        return _react2.default.createElement(Component, props);
       }
     );
   };

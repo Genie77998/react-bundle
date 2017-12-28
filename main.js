@@ -40,9 +40,9 @@ export class Bundle extends React.Component {
 }
 
 
-export const loadComponent = (component) => () => (
+export const loadComponent = (component) => props => (
   <Bundle load={component}>
-    {Component => <Component />}
+    {Component => <Component {...props} />}
   </Bundle>
 )
 
